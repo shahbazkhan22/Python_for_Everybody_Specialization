@@ -35,18 +35,7 @@ try:
 except:
     js = None
 
-if not js or 'status' not in js or js['status'] != 'OK':
-    print('==== Failure To Retrieve ====')
-    print(data)
-    #continue
+placeid = js['results'][0]['place_id']
+print(placeid)
 
-#print(json.dumps(js, indent=4))
-plceid = js['results'][0]['place_id']
-print(plceid)
-	
-#lat = js['results'][0]['geometry']['location']['lat']
-#lng = js['results'][0]['geometry']['location']['lng']
-#print('lat', lat, 'lng', lng)
-#location = js['results'][0]['formatted_address']
-#print(location)
 	
