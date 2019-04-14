@@ -8,4 +8,4 @@ for line in fh:
         count = count+1
         
     #print(line)
-print(num/count)
+print("Average spam confidence:", num/count)
